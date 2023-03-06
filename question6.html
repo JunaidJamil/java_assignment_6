@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+         let subject1 = prompt("enter subject 1"),
+          subject2 = prompt("enter subject 2"),
+             subject3 = prompt("enter subject 3");
+
+         let mark1 = +prompt("obtained marks 1")
+            , mark2 = +prompt("obtained marks 2")
+              , mark3 = +prompt("obtained marks 3"),
+             
+             total1=100,
+             total2=100,
+             total3=100,
+             percentage_1,
+            percentage_2,
+            percentage_3,
+            Totalmark,
+            obtained;
+
+Totalmark=total1+total2+total3;
+obtained=mark1+mark2+mark3;
+
+
+             percentage_1=(mark1/total1)*100;
+              percentage_2=(mark2/total2)*100;
+             percentage_3=(mark3/total3)*100;
+             Fin=(obtained/Totalmark)*100; 
+                                                 
+document.write("<tr> <td> Subject </td>  "+"  <td> Total </td>  "+"   <td> obtained </td>  "+"  <td> Percentage </td> </tr><br>");
+
+document.write("<tr> <td> "+subject1+" </td>"+" <td> "+total1+" </td>"+"     "+"<td> "+mark1+" </td>"+" "+"<td> "+percentage_1+"% </td>"+"  </tr> <br>");
+document.write("<tr> <td> "+subject2+" </td>"+" <td> "+total2+" </td>"+"     "+"<td> "+mark2+" </td>"+" "+"<td> "+percentage_2+" % </td>"+"  </tr> <br>");
+document.write("<tr> <td> "+subject3+" </td>"+" <td> "+total3+" </td>"+"     "+"<td> "+mark3+" </td>"+" "+"<td> "+percentage_3+"% </td>"+"  </tr> <br>");
+document .write("<tr> <td> TOTAL </td>"+" <td> <strong>"+Totalmark+"</strong> </td>"+"     "+"<td><strong>"+obtained+"</strong> </td>"+" "+"<td> "+Fin+" % </td>"+"  </tr> <br>")
+    </script>
+</body>
+
+</html>
